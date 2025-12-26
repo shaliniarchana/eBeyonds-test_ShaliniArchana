@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Landing Page</title>
+
+
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+
+  <!--Swiper CSS (CDN)-->
+  <!-- Swiper loaded via CDN for simplicity and faster setup -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HERO WRAPPER -->
+<section class="hero-wrapper">
+
+  <!-- HEADER -->
+ <header class="main-header py-3">
+  <div class="container">
+    <div class="row align-items-center">
+   <div class="col-md-3 logo d-flex align-items-center">
+  <strong>Company Logo</strong>
+
+  <!-- Language Selector -->
+  <div id="language-selector" class="ml-3 d-flex align-items-center position-relative" style="cursor:pointer;">
+    <span id="selected-language" class="me-1">EN</span>
+    <img src="images/lang-icon.svg" alt="Language" width="24" height="24">
+
+    <!-- Dropdown (hidden initially) -->
+    <div id="language-dropdown" class="dropdown-menu p-2" style="display:none; position:absolute; top:30px; left:0; min-width:120px;">
+      <p>Browser Language: <strong id="browser-lang"></strong></p>
+      <hr>
+      <p>EN</p>
+      <p>FR</p>
+      <p>ES</p>
+    </div>
+  </div>
+</div>
+      <div class="col-md-9 text-right">
+        <nav class="nav-menu d-inline-flex align-items-center">
+          <a href="#about">About Us</a>
+          <a href="#news">Features</a>
+          <a href="#contact">Contact</a>
+
+          <!-- Hamburger Icon -->
+         <!-- Hamburger Icon -->
+<a href="#" class="menu-toggle ms-3 d-md-inline-block d-none">
+  <img src="images/hamburger-menu-icon.svg" alt="Menu" width="30">
+</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- HERO -->
+  <div class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-white">
+          <h1>Welcome to<br>our company...</h1>
+          <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. </p>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="about" class="about py-5 text-center">
+  <div class="container text-center">
+    <h2 class="section-title about-title">About</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum.At vero eos et accusam et justo duo dolores et ea rebum.
+    </p>
+  </div>
+</section>
+
+
+<section id="news" class="news py-5">
+  <div class="container text-center">
+    <h2 class="section-title news-title">Latest News</h2>
+
+    <!-- Swiper -->
+    <div class="swiper news-slider mt-4">
+      <div class="swiper-wrapper">
+
+        <!-- Card 1 -->
+        <div class="swiper-slide">
+          <div class="card h-100 news-card">
+            <img src="images/img2.png" class="card-img-top" alt="News 1">
+            <div class="card-body d-flex flex-column">
+              <p class="news-text">
+                Lorem ipsum dolor sit amet, consetetur...
+                <span class="full-text d-none">
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </span>
+              </p>
+              <div class="mt-auto text-right">
+                <a href="#" class="read-more">
+                  Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="swiper-slide">
+          <div class="card h-100 news-card">
+            <img src="images/img3.png" class="card-img-top" alt="News 2">
+            <div class="card-body d-flex flex-column">
+              <p class="news-text">
+                Sed diam nonumy eirmod tempor...
+                <span class="full-text d-none">
+                  et dolore magna aliquyam erat, sed diam voluptua.
+                </span>
+              </p>
+              <div class="mt-auto text-right">
+                <a href="#" class="read-more">
+                  Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide">
+          <div class="card h-100 news-card">
+            <img src="images/img1.png" class="card-img-top" alt="News 3">
+            <div class="card-body d-flex flex-column">
+              <p class="news-text">
+                At vero eos et accusam...
+                <span class="full-text d-none">
+                  et justo duo dolores et ea rebum.
+                </span>
+              </p>
+              <div class="mt-auto text-right">
+                <a href="#" class="read-more">
+                  Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Card 4 -->
+        <div class="swiper-slide">
+          <div class="card h-100 news-card">
+            <img src="images/img2.png" class="card-img-top" alt="News 1">
+            <div class="card-body d-flex flex-column">
+              <p class="news-text">
+                Lorem ipsum dolor sit amet, consetetur...
+                <span class="full-text d-none">
+                  eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                </span>
+              </p>
+              <div class="mt-auto text-right">
+                <a href="#" class="read-more">
+                  Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="swiper-slide">
+          <div class="card h-100 news-card">
+            <img src="images/img3.png" class="card-img-top" alt="News 2">
+            <div class="card-body d-flex flex-column">
+              <p class="news-text">
+                Sed diam nonumy eirmod tempor...
+                <span class="full-text d-none">
+                  et dolore magna aliquyam erat, sed diam voluptua.
+                </span>
+              </p>
+              <div class="mt-auto text-right">
+                <a href="#" class="read-more">
+                  Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="swiper-slide">
+          <div class="card h-100 news-card">
+            <img src="images/img1.png" class="card-img-top" alt="News 3">
+            <div class="card-body d-flex flex-column">
+              <p class="news-text">
+                At vero eos et accusam...
+                <span class="full-text d-none">
+                  et justo duo dolores et ea rebum.
+                </span>
+              </p>
+              <div class="mt-auto text-right">
+                <a href="#" class="read-more">
+                  Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation Arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+
+    <h2 class="section-title testimonial-title">Testimonials</h2>
+
+    <div class="swiper testimonials-slider">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+
+            <!-- Top Quote Image (facing right) -->
+            <img src="images/quote-right-icon.svg" alt="quote" class="quote quote-top">
+
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+
+            <!-- Bottom Quote Image (facing left) -->
+            <img src="images/quote-right-icon.svg" alt="quote" class="quote quote-bottom">
+
+            <div class="testimonial-author">
+              <strong>- Lorem ipsum dolor</strong>
+              <span>Labore et dolore</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box">
+
+            <img src="images/quote-right-icon.svg" alt="quote" class="quote quote-top">
+
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            </p>
+
+            <img src="images/quote-right-icon.svg" alt="quote" class="quote quote-bottom">
+
+            <div class="testimonial-author">
+              <strong>- Lorem ipsum dolor</strong>
+              <span>Labore et dolore</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Arrows -->
+      <div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="contact-title">Contact Us</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.10910874959!2d-80.83750247443533!3d35.22865384990122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a022d78b3de7%3A0x9f5c6731be8cbf86!2sUNC%20Charlotte%20Center%20City!5e0!3m2!1sen!2slk!4v1766748972305!5m2!1sen!2slk"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <div class="container">
+
+    <!-- TOP ROW -->
+    <div class="row mb-4">
+      
+      <!-- LEFT -->
+      <div class="col-md-6">
+        <div class="footer-brand">
+          <div class="footer-logo">Company Logo</div>
+          <div class="footer-info">
+            Keas 69 Str. 15234, East Nile<br>
+            Athens, Greece<br>
+            +249 9123 456 78<br>
+            +249 9123 456 78
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-md-6">
+        <div class="footer-right">
+          <div class="footer-title">Stay connected with</div>
+          <div class="social-icons">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/insta.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM ROW -->
+    <div class="row">
+      <div class="col-md-6 copyright">
+        © 2020 Reserved by Company Name Limited.
+      </div>
+      <div class="col-md-6 published">
+        Published: March 05, 2024
+      </div>
+    </div>
+
+  </div>
+</footer>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+<!-- Swiper Init (ES6) -->
+<script>
+  const swiper = new Swiper(".testimonials-slider", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+</script>
+
+<script>
+  const newsSwiper = new Swiper(".news-slider", {
+  loop: true,               // infinite scroll
+  slidesPerView: 1,         // show 1 slide at a time
+  spaceBetween: 30,       
+  autoplay: {               // auto-scroll
+    delay: 3000,            // 3 seconds
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,        // allows bullets to be clickable
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,     // 2 slides on tablet+
+    },
+    992: {
+      slidesPerView: 3,     // 3 slides on desktop+
+    },
+  },
+});
+
+
+</script>
+<script>
+document.querySelectorAll('.read-more').forEach(link => {
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+
+    const cardBody = this.closest('.card-body');
+    const fullText = cardBody.querySelector('.full-text'); 
+    fullText.classList.toggle('d-none'); 
+
+
+    if (this.textContent.includes('Read')) {
+      this.innerHTML = 'Show Less <img src="images/right-icon.svg" alt="arrow" class="read-arrow">';
+    } else {
+      this.innerHTML = 'Read <img src="images/right-icon.svg" alt="arrow" class="read-arrow">';
+    }
+  });
+});
+
+
+</script>
+
+<script>
+const langSelector = document.getElementById('language-selector');
+const dropdown = document.getElementById('language-dropdown');
+const browserLangSpan = document.getElementById('browser-lang');
+
+langSelector.addEventListener('click', (e) => {
+  e.stopPropagation(); 
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+
+  // Show browser language
+  const browserLang = navigator.language || navigator.userLanguage;
+  browserLangSpan.textContent = browserLang.slice(0,2).toUpperCase();
+});
+
+
+document.addEventListener('click', () => {
+  dropdown.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

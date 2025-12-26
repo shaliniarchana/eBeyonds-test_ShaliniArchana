@@ -1,0 +1,27 @@
+.main-header {
+  background: transparent; 
+  color: white;
+
+  a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.nav-menu a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000; /* adjust color */
+}
+
+.hamburger-icon img {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}

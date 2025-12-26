@@ -1,0 +1,38 @@
+.hero-wrapper {
+  position: relative;
+  background: 
+    linear-gradient(120deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3)),
+    url("../images/Hero Banner.png") center/cover no-repeat;
+  color: white;
+  overflow: hidden; 
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  background: url("../images/Hero Background Shape.svg") center/cover no-repeat;
+  pointer-events: none; 
+  z-index: 1; 
+}
+
+.hero {
+  position: relative;
+  z-index: 2;
+  padding: 120px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero p {
+  max-width: 400px; 
+  line-height: 2; 
+  margin-top: 20px; 
+  color: white;
+}
